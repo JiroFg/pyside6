@@ -20,6 +20,14 @@ from widgets.SliderHolder import SliderHolder
 from widgets.RockWidget import RockWidget
 from layouts.MainWindow import MainWindow
 from widgets.MyWidget import MyWidget
+from widgets.ButtonWidget import ButtonWidget
+from widgets.EditorWidget import EditorWidget
+from widgets.ImageLabel import ImageLabel
+from widgets.PoliciesWidget import PoliciesWidget
+from widgets.GridWidge import GridWidget
+from widgets.CheckBoxWidget import CheckBoxWidget
+from widgets.CheckExWidget import CheckExWidget
+from widgets.RadioWidget import RadioWidget
 import sys
 
 app: QApplication = QApplication(sys.argv)
@@ -27,7 +35,16 @@ app: QApplication = QApplication(sys.argv)
 # window = SliderHolder()
 # window = RockWidget()
 # window = MainWindow(app)
-window = MyWidget()
+# window = MyWidget()
+# window = ButtonWidget()
+# window = EditorWidget()
+# window = ImageLabel()
+# window = PoliciesWidget()
+# window = GridWidget()
+# window = CheckBoxWidget()
+# window = CheckExWidget()
+window = RadioWidget()
+window.setMinimumSize(1920, 1080)
 
 window.show()
 app.exec()
