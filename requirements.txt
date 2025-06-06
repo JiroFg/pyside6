@@ -1,1 +1,2 @@
 pyside6==6.9.1
+screeninfo==0.8.1

@@ -28,7 +28,12 @@ from widgets.GridWidge import GridWidget
 from widgets.CheckBoxWidget import CheckBoxWidget
 from widgets.CheckExWidget import CheckExWidget
 from widgets.RadioWidget import RadioWidget
+from config.screen import get_monitor_size
+from screeninfo import Monitor
 import sys
+
+monitor: Monitor = get_monitor_size()
+print(monitor)
 
 app: QApplication = QApplication(sys.argv)
 # window = ButtonHolder()
@@ -44,7 +49,7 @@ app: QApplication = QApplication(sys.argv)
 # window = CheckBoxWidget()
 # window = CheckExWidget()
 window = RadioWidget()
-window.setMinimumSize(1920, 1080)
+window.setMinimumSize(1000, 700)
 
 window.show()
 app.exec()
