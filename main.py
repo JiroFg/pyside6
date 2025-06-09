@@ -28,6 +28,9 @@ from widgets.GridWidge import GridWidget
 from widgets.CheckBoxWidget import CheckBoxWidget
 from widgets.CheckExWidget import CheckExWidget
 from widgets.RadioWidget import RadioWidget
+from widgets.ListWidget import ListWidget
+from widgets.TabWidget import TabWidget
+from widgets.ComboBoxWidget import ComboBoxWidget
 from config.screen import get_monitor_size
 from screeninfo import Monitor
 import sys
@@ -48,7 +51,10 @@ app: QApplication = QApplication(sys.argv)
 # window = GridWidget()
 # window = CheckBoxWidget()
 # window = CheckExWidget()
-window = RadioWidget()
+# window = RadioWidget()
+# window = ListWidget()
+# window = TabWidget()
+window = ComboBoxWidget()
 window.setMinimumSize(1000, 700)
 
 window.show()
